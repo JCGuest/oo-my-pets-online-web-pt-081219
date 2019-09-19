@@ -25,7 +25,7 @@ class Owner
   end
   
   def cats 
-    Cats.all.collect { |cat| cat.owner == self }
+    Cats.all.collect { |cat| cat.owner == @name }
   end
 
 end
