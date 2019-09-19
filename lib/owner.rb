@@ -23,5 +23,9 @@ class Owner
   def self.reset_all
     @@all = []
   end
+  
+  def cats 
+    Cats.all.each { |cat| cat.owner == self }
+  end
 
 end
